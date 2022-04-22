@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './views/Login';
-function App() {
+function Navegation() {
   return (
     <BrowserRouter>
     <Routes>
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navegation;
