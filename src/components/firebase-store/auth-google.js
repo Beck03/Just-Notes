@@ -32,4 +32,4 @@ export const loginGoogle = () => {
   });
 }
 
-export default auth;
+//export default auth;
