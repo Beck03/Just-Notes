@@ -2,7 +2,7 @@ import logo from './Images/login-imag.png';
 import google from './Images/google.png';
 import begin from './Images/begin.png';
 import './styles/Login.css';
-import  loginGoogle from './firebase-store/auth-google'
+import  { loginGoogle } from './firebase-store/auth-google'
 
 //import { useNavigate } from 'react-router-dom';
 //const navigate = useNavigate;
