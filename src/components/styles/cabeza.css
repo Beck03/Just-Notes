@@ -1,0 +1,103 @@
+@media ( max-width: 1200px) {
+
+.cabeza{
+    margin: 0;
+    background: #F0D8FF;
+    height: 15%;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    
+}
+.justNotes{
+    width: 15%;
+    position: relative;
+    top: 30%;
+    left: 3%;
+   
+}
+#Cerrar{
+    width: 7%;
+    height: 10%;
+    position: relative;
+    top: 25%;
+    left: 76%;
+    background: none;
+    border: none;
+    border-radius: 100%;
+
+}
+}
+@media( max-width: 600px) {
+    .cabeza{
+        margin: 0;
+        background: #F0D8FF;
+        height: 15%;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        top: 0;
+        
+    }
+    .justNotes{
+        width: 25%;
+        position: relative;
+        top: 30%;
+        left: 5%;
+       
+    }
+    .cerrar{
+        width: 50%;
+    }
+
+    #Cerrar{
+        width: 13%;
+        height: 10%;
+        position: relative;
+        top: 25%;
+        left: 58%;
+        background: none;
+        border: none;
+        border-radius: 100%;
+    
+    }
+    
+}
+@media( max-width: 768px) {
+    .cabeza{
+        margin: 0;
+        background: #F0D8FF;
+        height: 15%;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 110px;
+        top: 0;
+        
+    }
+    .justNotes{
+        width: 28%;
+        position: relative;
+        top: 30%;
+        left: 5%;
+       
+    }
+    .cerrar{
+        width: 50%;
+    }
+
+    #Cerrar{
+        width: 13%;
+        height: 10%;
+        position: relative;
+        top: 25%;
+        left: 55%;
+        background: none;
+        border: none;
+        border-radius: 100%;
+    
+    }
+}

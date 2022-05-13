@@ -2,7 +2,7 @@ import { getAuth,
         signInWithPopup, 
         GoogleAuthProvider 
         } from "firebase/auth";
-import { app } from "./keys";
+import { app } from "./llaves";
 
  export const auth = getAuth(app);
 

@@ -1,0 +1,28 @@
+.swal2-styled.swal2-confirm{
+  background-color: #C46EFC;
+  border: none;
+  position: relative;
+  top: 20%;
+  margin-bottom: 15%;
+  
+}
+.swal2-styled.swal2-cancel{
+  background: none;
+  color: black;
+  text-decoration-line: underline;
+  position: relative;
+  top: 20%;
+  margin-bottom: 15%;
+}
+.swal2-html-container{
+  color: black;
+  position: relative;
+  top: 50%;
+  font-weight: bold;
+  font-size: 22px;
+}
+.swal2-container.swal2-center>.swal2-popup{
+  width: 40%;
+  height: 55%;
+  border-radius: 10px;
+}

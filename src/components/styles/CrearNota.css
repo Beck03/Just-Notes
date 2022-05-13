@@ -1,0 +1,94 @@
+.CrearNota{
+    background-color: #eacffb;
+    height: 100vh;
+}
+#btnVolver{
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    top: 4%;
+    left: 2.5%;
+    background: none;
+    border: none;
+    border-radius: 100%;
+}
+
+.labelTitulo{
+    position: absolute;
+    top: 18%;
+    left: 15%;
+}
+#titulo{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 30%;
+    background: none;
+    border: none;
+    padding: 1%;
+    border-bottom: 1px solid #EF5DE0;
+    font-size: 18px;
+    font-weight: bold;
+}
+::placeholder{
+    font-size: 15px;
+    font-weight: lighter;
+}
+textarea:focus, input:focus {
+    outline: none; 
+  }
+.labelNota{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+textarea{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 68%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.241);
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#btnCrear{
+    width: 13%;
+    height: 7%;
+    background-color: #C46EFC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.109);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 85%;
+    left: 73%;
+    
+}
+#btnEditar{
+    
+        width: 13%;
+        height: 7%;
+        background-color: #C46EFC;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.109);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 85%;
+        left: 73%;
+}
