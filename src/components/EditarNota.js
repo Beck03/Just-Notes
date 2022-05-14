@@ -1,13 +1,11 @@
+import React from 'react';
 import './styles/CrearNota.css';
 import atras from './Images/atras.png';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getDoc, doc, updateDoc, serverTimestamp} from 'firebase/firestore';
+import { getDoc, doc, updateDoc} from 'firebase/firestore';
 import { db } from './firebase-store/llaves'
 import { auth } from './firebase-store/inicioGoogle';
 import { useEffect, useState } from 'react';
-
-
-
 
 export function EditarNota(){
 

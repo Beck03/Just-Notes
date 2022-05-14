@@ -1,8 +1,9 @@
+import React from 'react';
 import './styles/notas.css';
 import Swal from 'sweetalert2';
 import Eliminar from './Images/Eliminar.png';
 import { useState, useEffect } from 'react';
-import { collection, onSnapshot, QuerySnapshot, doc, deleteDoc} from 'firebase/firestore';
+import { collection, onSnapshot, doc, deleteDoc, query, orderBy} from 'firebase/firestore';
 import { db } from './firebase-store/llaves'
 import { auth } from './firebase-store/inicioGoogle';
 import { useNavigate } from 'react-router-dom';
@@ -15,9 +16,14 @@ export function Notas (){
     const [ listaDeNotas, colocarListaDeNotas] = useState([]);
   
     const colocarNota = async () => {
-        onSnapshot(collection( db, 'users', auth.currentUser.uid, 'notas'), (QuerySnapshot) => {
+
+        const coleccionRef = collection( db, 'users', auth.currentUser.uid, 'notas');
+        const ordenar = query(coleccionRef, orderBy('fecha', 'desc'))
+        
+
+        onSnapshot(ordenar, (querySnapshot) => {
             const notas = []
-            QuerySnapshot.forEach(doc =>{
+            querySnapshot.forEach(doc =>{
                 notas.push({ ...doc.data(), id: doc.id})
             })
             colocarListaDeNotas(notas)
@@ -33,8 +39,6 @@ export function Notas (){
        // const borrarNota = (id) => deleteDoc(doc(db, 'recetas', id));
       const eliminarNota =  (id) =>{
            
-            console.log('Proximamente voy a eliminar')
-
             Swal.fire({
                 text: '¿Estás seguro de eliminarla?',
                 showCancelButton: true,

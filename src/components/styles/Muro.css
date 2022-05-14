@@ -1,9 +1,5 @@
 @media ( max-width: 1200px) {
 
-body{
-    background-color: #F0D8FF;
-}
-
 #crear{
     width: 7%;
     height: 10%;
@@ -13,7 +9,7 @@ body{
     background: #7A74F3;
     border: none;
     border-radius: 100%;
-    box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.109);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .añadir{
     width: 50%;
@@ -36,14 +32,12 @@ body{
    
     
 }
+
 }
-@media( max-width: 768px) {
-    body{
-        background-color: #F0D8FF;
-    }
-    
+@media ( min-width: 1201px)  {
+  
     #crear{
-        width: 13%;
+        width: 5%;
         height: 10%;
         position: fixed;
         bottom: 6%;
@@ -51,12 +45,15 @@ body{
         background: #7A74F3;
         border: none;
         border-radius: 100%;
-        box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.109);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    #crear:hover{
+        background: #928df1;
+        cursor: pointer;
     }
     .añadir{
         width: 50%;
     }
-   
     .creaUnaNota{
         width: 30%;
         position: absolute;
@@ -75,45 +72,4 @@ body{
        
         
     }
-     
-}
-@media( max-width: 600px) {
-    body{
-        background-color: #F0D8FF;
-    }
-    
-    #crear{
-        width: 16%;
-        height: 10%;
-        position: fixed;
-        bottom: 6%;
-        right: 4%;
-        background: #7A74F3;
-        border: none;
-        border-radius: 100%;
-        box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.109);
-    }
-    .añadir{
-        width: 60%;
-    }
-   
-    .creaUnaNota{
-        width: 30%;
-        position: absolute;
-        top: 32%;
-        left: 35%;
-    }
-    #contenedor{
-        margin-top: 140px;
-        width: 86%;
-        position: relative;
-        left: 7.2%;
-        top:18%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-       
-        
-    }
-     
 }

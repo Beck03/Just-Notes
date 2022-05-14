@@ -1,8 +1,9 @@
+import React from 'react';
 import logo from './Images/login-imag.png';
 import google from './Images/google.png';
 import vamos from './Images/vamos.png';
 import './styles/Login.css';
-import  { loginGoogle } from './firebase-store/inicioGoogle'
+import  { loginGoogle } from './firebase-store/inicioGoogle';
 
 
 

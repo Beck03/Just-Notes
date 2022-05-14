@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Login from './components/Login';
 import Muro from './components/Muro';
@@ -7,6 +8,7 @@ import { CrearNota } from './components/CrearNota';
 import { useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './components/firebase-store/inicioGoogle'
+import { Error404 } from './components/Error404';
 
 function App() {
 
@@ -27,10 +29,12 @@ onAuthStateChanged(auth, (user) =>{
         <Route path='/Muro' element={<Muro/>} />
         <Route path='/CrearNota' element={<CrearNota/>} />
         <Route path='/EditarNota/:id' element={<EditarNota/>} />
-
+        <Route path='/*' element={<Error404/>} />
       </Routes>
     : <Routes>
         <Route path='/' element={<Login />} /> 
+        <Route path='/*' element={<Error404/>} />
+
     </Routes>}
     </BrowserRouter>
 

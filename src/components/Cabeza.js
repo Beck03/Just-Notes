@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/cabeza.css';
 import justnotes from './Images/justnotes.png';
 import cerrarSesion from './Images/cerrarSesion.png';

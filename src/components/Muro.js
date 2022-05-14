@@ -1,6 +1,6 @@
+import React from 'react';
 import './styles/Muro.css';
 import Crear from './Images/Crear.png';
-import { Invitacion } from './Invitacion';
 import { useNavigate } from 'react-router-dom';
 import { Notas } from './Notas';
 import { Cabeza } from './Cabeza';

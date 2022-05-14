@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/CrearNota.css';
 import atras from './Images/atras.png';
 import { useNavigate } from 'react-router-dom';
